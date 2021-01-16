@@ -1,0 +1,28 @@
+.intro {
+  padding: 10vw;
+}
+.about {
+  padding: 10vw;
+}
+h1 {
+  font-family: "Fraunces", serif;
+}
+h2,
+li {
+  font-family: "Poppins", sans-serif;
+}
+.navbar-custom {
+  font-family: "Fraunces", serif;
+  background-color: white;
+  color: black;
+}
+.navbar-custom a {
+  color: black;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.5s ease;
+  -webkit-transition: border-bottom 0.5s ease;
+}
+
+.navbar-custom a:hover {
+  border-bottom: 3px solid black;
+}
