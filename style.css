@@ -1,81 +1,94 @@
-.intro {
-  padding: 10vw;
+* {
+  font-family: "Merriweather", serif;
 }
-h1 {
-  font-family: "Fraunces", serif;
-}
+h1,
 h2,
-li {
-  font-family: "Poppins", sans-serif;
-}
-li {
-  font-size: 1.2em;
-}
-.navbar-custom {
-  font-family: "Fraunces", serif;
-  background-color: white;
-  color: black;
-}
-.navbar-custom a {
-  color: black;
-  border-bottom: 3px solid transparent;
-  transition: border-bottom 0.5s ease;
-  -webkit-transition: border-bottom 0.5s ease;
+h3 {
+  font-family: "PT Mono", monospace;
 }
 
-.navbar-custom a:hover {
-  border-bottom: 3px solid black;
+h1 {
+  font-size: 2em;
 }
-a.active {
-  border-bottom: 3px solid black;
+h2 {
+  font-size: 1.8em;
+  margin: 0;
 }
-.about {
-  padding: 5vw 10vw 10vw 10vw;
-  width: 80vw;
-  display: block;
-  margin: auto;
-}
-.imageMe {
-  width: 30vh;
-  display: block;
-  margin: auto;
-  margin-bottom: 30px;
-}
-html {
-  position: relative;
-  min-height: 100%;
+h3 {
+  background-color: #283618;
+  width: fit-content;
+  padding: 5px 10px;
+  color: #e9edc9;
 }
 body {
-  margin-bottom: 100px; /* Margin bottom by footer height */
+  background-color: #f1f4e0;
+  color: #283618;
 }
-.footer {
-  position: absolute;
+
+.content {
+  padding: 2em;
+  height: 100vh;
+  overflow-x: scroll;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+footer {
+  position: relative;
   bottom: 0;
+  padding: 1.5em;
   width: 100%;
-  height: 80px; /* Set the fixed height of the footer here */
-  line-height: 80px; /* Vertically center the text there */
-  color: white;
-  background-color: black;
-  font-family: "Poppins", sans-serif;
+  background-color: #283618;
+  color: #f1f4e0;
+}
+
+.icons svg {
+  color: #283618;
+  height: 2em;
+  padding-right: 1.2em;
+  width: auto;
 }
 .icons {
-  float: right;
+  display: flex;
+  /* background-color: red; */
+  padding: 1.2em 0;
 }
 
-a.icon {
-  color: white;
+a {
+  color: #457b9d;
+  font-weight: 700;
 }
 
-a.icon:hover {
-  color: thistle;
-  text-decoration: none;
-}
-a.club {
-  color: black;
-  font-weight: 500;
-  text-decoration: underline solid black 2px;
+ul {
+  list-style: none;
 }
 
-a.club:hover {
-  background-color: thistle;
+li:before {
+  content: ">";
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  border-bottom: 1px solid #283618;
+}
+th {
+  display: none;
+}
+
+td {
+  padding: 10px;
+}
+tr {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.project-table td:first-child {
+  font-weight: 700;
 }
