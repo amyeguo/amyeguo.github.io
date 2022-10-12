@@ -26,7 +26,7 @@ body {
 }
 
 .content {
-  padding: 2em;
+  padding: 3em 10em;
   height: 100vh;
   overflow-x: scroll;
 }
@@ -91,4 +91,10 @@ tr {
 
 .project-table td:first-child {
   font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 1em;
+  }
 }
